@@ -1,0 +1,77 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+label{
+    font-size: 140%;
+}
+body{
+    font-family: 'Open Sans';
+    color:#fff;
+}
+section{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url('/media/static/img/beach.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+.form-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+    width: 380px;
+    padding: 50px 30px;
+    border-radius: 10px;
+    box-shadow: 7px 7px 60px #000;
+}
+h1{
+    text-transform: uppercase;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 2em;
+}
+.control input{
+    width: 100%;
+    display: block;
+    padding: 10px;
+    color: #000;
+    border: none;
+    outline: none;
+    margin: 1em 0;
+    border-radius: 200px;
+}
+
+.content{
+    font-size: 100%; 
+    font-size: 140%;
+}
+
+.control input[type="checkbox"]{
+    padding: 5rem;
+}
+
+.control input[type="submit"]{
+    background: darkblue;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    opacity: .8;
+    color: #fff;
+    width: 50%;
+    top: 0%;
+    left: 50%;
+    transform: translate(50%);
+    font-size: 100%;
+
+}
+.control input[type="submit"]:hover{
+    opacity: 1;
+}
+.result{
+    text-align: center;
+}

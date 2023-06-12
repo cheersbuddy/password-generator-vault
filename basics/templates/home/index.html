@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="/media/static/css/inputpgcss.css">
+</head>
+<body>
+    <section>
+        <div class="form-container">
+            <h1>password generator</h1>
+            <form action ="home/char/" >
+              {% csrf_token %}
+                <div class="control">
+                    <label for="length">Password Length</label>
+                    <input type="text" name="length" placeholder="Enter Password Length" value="8">
+                </div>
+
+                <span>
+                    <div class="content"><input type="checkbox" name="characters"> Characters</div>
+                    <br>
+                    <div class="content"><input type="checkbox" name="numbers"> Numbers</div>
+                    <br>
+                    <div class="content"><input type="checkbox" name="sp"> Special Characters</div>
+        
+                </span>
+                <div class="control">
+                    <input type="submit" value="generate">
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
